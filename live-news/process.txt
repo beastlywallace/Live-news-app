@@ -1,0 +1,16 @@
+https://v2.tailwindcss.com/docs/guides/nextjs
+
+mediastack api
+
+stepzen init .....to start steppzen
+then in the website,under getting started, click on REST API
+
+run
+// stepzen import curl 
+ "http://api.mediastack.com/v1/news?access_key=ab9c6744f111dbf05afef7b5f572b764&sources=business,sports"
+
+
+
+ "http://api.mediastack.com/v1/news?access_key=ab9c6744f111dbf05afef7b5f572b764&countries=us%2Cgb&limit=100&offset=0&sort=published_desc"
+
+ stepzen start

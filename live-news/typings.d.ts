@@ -6,7 +6,7 @@ type Article = {
   category: string;
   country: string;
   description: string;
-  image: string;
+  image: string | null;
   language: string;
   published_at: string;
   source: string;
@@ -21,14 +21,14 @@ type Pagination = {
     total: int
 }
 type NewsResponse = {
-  pagination: Pagination;
+  pagination: Pagination ;
   data: Article[];
 };
-type Categories =
-  | "general"
+type Category =
   | "business"
   | "entertainment"
+  | "general" 
   | "health"
   | "science"
-  | "sportS"
-  | "technology" ;
+  | "sports"
+  | "technology";
