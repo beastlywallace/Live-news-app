@@ -14,3 +14,29 @@ run
  "http://api.mediastack.com/v1/news?access_key=ab9c6744f111dbf05afef7b5f572b764&countries=us%2Cgb&limit=100&offset=0&sort=published_desc"
 
  stepzen start
+
+
+
+ in the colal host 5001 of the graphql,,copy the export query
+ e,g 
+ const GET_QUERY = gql`
+  query MyQuery   {
+    myQuery(access_key: "ab9c6744f111dbf05afef7b5f572b764", limit: "") {
+      data {
+        author
+        category
+        country
+        description
+        image
+        language
+        published_at
+        source
+        title
+        url
+      }
+    }
+  }
+`;
+
+
+//to get stepzen api key, run "stepzen whoami --apikey"
